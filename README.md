@@ -1,7 +1,7 @@
 ## API Data Visualization Project
 
 > :warning: `Antes de começar a execução é recomendado começar por verificar que as portas 3000 e 8080 estão livres.`
-> :warning: `É igualmente necessário a instalação de NodeJS e npm. A instalação de ambos pode ser obtida no link seguinte [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+> :warning: `É igualmente necessário a instalação de NodeJS e npm. A instalação de ambos pode ser obtida no link seguinte:` [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 
 Para executar a aplicação é preciso realizar na pasta atual do projeto os seguintes comandos em ordem :
 
