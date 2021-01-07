@@ -1,6 +1,7 @@
 const path = require('path');
 const express = require('express');
 const createError = require('http-errors');
+const nocache = require('nocache');
 
 // express config
 const app = express();
@@ -10,6 +11,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('port', 8080);
+app.set('etag', false); 
+app.use((req, res, next) => {
+    res.set('Cache-Control', 'no-store')
+    next()
+});
+app.use(nocache());
 
 // express cors
 const cors = function (request, response, next) {
